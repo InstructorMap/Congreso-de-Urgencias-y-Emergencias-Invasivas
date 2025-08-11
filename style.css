@@ -1,0 +1,295 @@
+/* --- Reseteo Básico y Variables --- */
+:root {
+    --primary-color: #0d47a1; /* Azul oscuro profesional */
+    --secondary-color: #1565c0; /* Azul más claro */
+    --accent-color: #d32f2f; /* Rojo para alertas y CTA */
+    --light-gray: #f4f6f8;
+    --dark-gray: #333;
+    --text-color: #424242;
+    --white: #ffffff;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    line-height: 1.7;
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+h2 i {
+    margin-right: 10px;
+}
+
+/* --- Hero Header --- */
+.hero {
+    background: linear-gradient(rgba(13, 71, 161, 0.85), rgba(13, 71, 161, 0.85)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+    color: var(--white);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content .event-tag {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin: 20px 0;
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    opacity: 0.9;
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 15px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #b71c1c;
+    transform: translateY(-3px);
+}
+
+/* --- Barra de Información --- */
+.info-bar {
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.info-bar i {
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.whatsapp-link {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-link:hover {
+    background-color: #128C7E;
+}
+
+/* --- Secciones --- */
+section:nth-child(even) {
+    background-color: var(--light-gray);
+}
+
+/* --- Docentes --- */
+.docentes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.docente-card {
+    background: var(--white);
+    border: 1px solid #ddd;
+    border-left: 5px solid var(--secondary-color);
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    flex-basis: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* --- Talleres, Incluye, Cronograma --- */
+.talleres-list p, .includes-list li, .schedule-list li {
+    font-size: 1.1rem;
+    background: var(--white);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+.includes-list, .schedule-list {
+    list-style-type: none;
+}
+
+.schedule-list li span {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-right: 15px;
+}
+
+/* --- Costos --- */
+.costos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.costo-card {
+    background-color: var(--white);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.costo-card:hover {
+    transform: scale(1.05);
+}
+.costo-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.costo-card .precio {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+.costo-card .detalle {
+    font-size: 0.9rem;
+    color: #757575;
+}
+
+/* --- Formulario de Inscripción --- */
+.inscription-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.inscription-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.inscription-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+.inscription-form button {
+    width: 100%;
+}
+
+/* --- Ubicación y Testimonios --- */
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+#ubicacion p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.testimonios-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.testimonio-card {
+    background: var(--white);
+    border-left: 5px solid var(--secondary-color);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 280px;
+}
+.testimonio-card p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.testimonio-card span {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+
+/* --- Footer --- */
+footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 20px;
+}
+footer strong {
+    color: #64b5f6; /* Un azul claro para resaltar el número */
+}
+
+/* --- Responsividad --- */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .info-bar {
+        flex-direction: column;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    .costos-grid, .testimonios-grid {
+        flex-direction: column;
+    }
+}
