@@ -17,7 +17,7 @@
 </head>
 <body>
 
-    <header class="hero">
+    <header class="hero" style="background-image: linear-gradient(rgba(13, 71, 161, 0.8), rgba(13, 71, 161, 0.8)), url('congresoportada.jpg');">
         <div class="hero-content">
             <span class="event-tag">🔴 CONGRESO 2025</span>
             <h1>Medicina Invasiva en CABA</h1>
@@ -40,13 +40,13 @@
                 <div class="docente-card">Dr. Dennis Sánchez</div>
                 <div class="docente-card">Dir. Marisa Campos</div>
                 <div class="docente-card">Tem. Marcelo Patri</div>
-                <div class="docente-card">Tem. Daniel Sosa</div>
+                <div class="docente-card">Ten. Daniel Sosa</div>
             </div>
         </section>
 
         <section id="talleres" class="container">
-            <h2><i class="fas fa-medkit"></i> 5 Talleres Teórico-Prácticos</h2>
-            <div class="talleres-list">
+            <h2><i class="fas fa-medkit"></i> 5 Talleres 100% Prácticos</h2>
+            <div class="talleres-list-simple">
                 <p>1️⃣ Taller de Sutura Básica y Avanzada</p>
                 <p>2️⃣ Taller de Intubación Endotraqueal y Manejo de Vía Aérea</p>
                 <p>3️⃣ Taller de Vía Central y Periférica</p>
@@ -55,6 +55,22 @@
             </div>
         </section>
         
+        <section id="incluye" class="container">
+            <h2><i class="fas fa-check-circle"></i> Tu Inscripción Incluye</h2>
+            <div class="incluye-content">
+                <ul class="includes-list">
+                    <li>✅ Cinco talleres teórico-prácticos</li>
+                    <li>✅ Material de estudio en soporte digital</li>
+                    <li>✅ Diploma por 50 horas cátedra</li>
+                    <li>✅ Certificado analítico con detalle de todos los talleres</li>
+                </ul>
+                <div class="diploma-container">
+                    <h3>Modelo del Diploma que Recibirás</h3>
+                    <img src="muestradiploma.jpeg" alt="Modelo de diploma del congreso" class="diploma-image">
+                </div>
+            </div>
+        </section>
+
         <section id="cronograma" class="container">
             <h2><i class="fas fa-clock"></i> Cronograma del Evento</h2>
             <ul class="schedule-list">
@@ -67,17 +83,7 @@
                 <li><span>🛡️ 20:30</span> Cierre y entrega de diplomas</li>
             </ul>
         </section>
-
-        <section id="incluye" class="container">
-            <h2><i class="fas fa-check-circle"></i> Tu Inscripción Incluye</h2>
-            <ul class="includes-list">
-                <li>✅ Cinco talleres teórico-prácticos</li>
-                <li>✅ Material de estudio en soporte digital</li>
-                <li>✅ Diploma por 50 horas cátedra</li>
-                <li>✅ Certificado analítico con detalle de todos los talleres</li>
-            </ul>
-        </section>
-
+        
         <section id="costos" class="container">
             <h2><i class="fas fa-dollar-sign"></i> Inversión</h2>
             <div class="costos-grid">
@@ -97,35 +103,40 @@
         <section id="inscripcion" class="container">
             <h2><i class="fas fa-edit"></i> Formulario de Inscripción</h2>
             <p>Completa tus datos para reservar tu vacante. Nos pondremos en contacto para finalizar el proceso.</p>
+            
             <form action="https://formspree.io/f/xvgqdjlb" method="POST" class="inscription-form">
                 <label for="nombre">Nombre Completo</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Ej: María González" required>
-                
                 <label for="email">Correo Electrónico</label>
                 <input type="email" id="email" name="email" placeholder="Ej: maria.gonzalez@email.com" required>
-
                 <label for="telefono">Teléfono (con código de área)</label>
                 <input type="tel" id="telefono" name="telefono" placeholder="Ej: 1155551234" required>
-
                 <label for="profesion">Profesión / Ocupación</label>
                 <input type="text" id="profesion" name="profesion" placeholder="Ej: Estudiante de Medicina, Enfermero, Médico" required>
-                
                 <button type="submit" class="cta-button">Confirmar Inscripción</button>
             </form>
         </section>
 
-        <section id="ubicacion" class="container">
-            <h2><i class="fas fa-map"></i> Ubicación del Evento</h2>
-            <p>Espacio Delfos - Azcuénaga 714, CABA, Buenos Aires</p>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.149299480926!2d-58.40220602447998!3d-34.59940697295551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca97b3967527%3A0x629a380961274176!2sAzcu%C3%A9naga%20714%2C%20C1029AAO%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1723236746816!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section id="muro-congresos" class="container">
+            <h2><i class="fas fa-images"></i> Muro de Congresos Anteriores</h2>
+            <p class="subtitle-section">Un vistazo a la intensidad y el aprendizaje en nuestras ediciones pasadas en Oncativo, Rosario, Córdoba y más.</p>
+            <div class="gallery-grid">
+                <img src="congreso1.jpg" alt="Foto de congreso anterior 1">
+                <img src="congreso2.jpg" alt="Foto de congreso anterior 2">
+                <img src="congreso3.jpg" alt="Foto de congreso anterior 3">
+                <img src="congreso4.jpg" alt="Foto de congreso anterior 4">
+                <img src="congreso5.jpg" alt="Foto de congreso anterior 5">
+                <img src="congreso6.jpg" alt="Foto de congreso anterior 6">
+                <img src="congreso7.jpg" alt="Foto de congreso anterior 7">
+                <img src="congreso8.jpg" alt="Foto de congreso anterior 8">
+                <img src="congreso9.jpg" alt="Foto de congreso anterior 9">
             </div>
         </section>
 
         <section id="testimonios" class="container">
-            <h2><i class="fas fa-comment-dots"></i> Testimonios de Congresos Anteriores</h2>
+            <h2><i class="fas fa-comment-dots"></i> Testimonios de los Participantes</h2>
             <div class="testimonios-grid">
-                <div class="testimonio-card">
+                 <div class="testimonio-card">
                     <p>"La calidad de los talleres prácticos superó mis expectativas. Pude aplicar técnicas de sutura avanzada en un entorno controlado y con supervisión experta. 100% recomendable."</p>
                     <span>- Dr. A. López, Médico Residente</span>
                 </div>
@@ -137,6 +148,38 @@
                     <p>"Una jornada intensiva y muy valiosa. No solo por lo aprendido, sino por el networking con colegas de todo el país. La organización fue impecable en todo momento."</p>
                     <span>- E. Vargas, Estudiante Avanzado de Medicina</span>
                 </div>
+                 <div class="testimonio-card">
+                    <p>"El taller de vía central fue excelente, con prácticas reales que aumentaron mi confianza en el procedimiento. ¡Es un congreso que vale la inversión!"</p>
+                    <span>- Dra. S. Gómez, Médica General</span>
+                </div>
+                <div class="testimonio-card">
+                    <p>"La diversidad de los talleres y la calidad del material de estudio son destacables. Me fui con herramientas muy útiles para mi práctica diaria."</p>
+                    <span>- Téc. R. Díaz, Técnico en Emergencias Médicas</span>
+                </div>
+                <div class="testimonio-card">
+                    <p>"La calidez de los organizadores y la disposición de los docentes para responder preguntas hicieron de este congreso una experiencia de aprendizaje muy enriquecedora."</p>
+                    <span>- Enf. P. Castro, Enfermero Profesional</span>
+                </div>
+                <div class="testimonio-card">
+                    <p>"Recomiendo ampliamente este congreso a cualquier profesional de la salud que busque actualizar sus habilidades en medicina invasiva. ¡El contenido es de primer nivel!"</p>
+                    <span>- Dr. M. Núñez, Cirujano</span>
+                </div>
+                <div class="testimonio-card">
+                    <p>"El equilibrio entre la teoría y la práctica en cada taller es perfecto. Sales con el conocimiento y la habilidad para aplicar lo aprendido inmediatamente."</p>
+                    <span>- Lic. L. Torres, Licenciada en Instrumentación Quirúrgica</span>
+                </div>
+                <div class="testimonio-card">
+                    <p>"Superó mis expectativas. Los temas son relevantes y la metodología de enseñanza es muy dinámica. ¡Ya estoy esperando el próximo congreso!"</p>
+                    <span>- Dr. J. Pérez, Médico Clínico</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="ubicacion" class="container">
+            <h2><i class="fas fa-map"></i> Ubicación del Evento</h2>
+            <p>Espacio Delfos - Azcuénaga 714, CABA, Buenos Aires</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.152174987399!2d-58.40019962425881!3d-34.5992978729555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9a50953a9f%3A0x6b3543053896574!2sAzcu%C3%A9naga%20714%2C%20C1029AAN%20CABA!5e0!3m2!1ses-419!2sar!4v1723504154817!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
@@ -145,7 +188,7 @@
     <footer>
         <div class="container">
             <p>¿Consultas? Llama o envía un mensaje a Ivana Santacroche: <strong>3532 439733</strong></p>
-            <p>&copy; 2025 Congreso Medicina Invasiva. Todos los derechos reservados.</p>
+            <p>© 2025 Congreso Medicina Invasiva. Todos los derechos reservados.</p>
         </div>
     </footer>
 
